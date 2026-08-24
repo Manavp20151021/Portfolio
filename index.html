@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechanical Engineering Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { 50: '#f0fdf4', 500: '#22c55e', 600: '#16a34a' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased font-sans">
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+        <span>Portfolio</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects</a>
+        <a href="#experience" class="hover:text-emerald-400 transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-emerald-400 transition-colors">Skills & Toolkit</a>
+        <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+      </nav>
+      <a href="resume.pdf" target="_blank" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-emerald-400 border border-emerald-500/40 rounded-lg hover:bg-emerald-500/10 transition">
+        Resume (PDF)
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 pt-24 pb-20">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 rounded-full mb-6">
+        <span>Available for Mechanical & Thermal Engineering Opportunities</span>
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
+        Mechanical Design, Thermal Systems & FEA / Simulation.
+      </h1>
+      <p class="text-lg text-slate-400 leading-relaxed mb-8">
+        Specializing in parametric CAD, conjugate heat transfer modeling, and structural optimization. Focused on bringing complex mechanisms from kinematic concept and FEA validation through physical prototyping.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#projects" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold rounded-lg transition shadow-lg shadow-emerald-500/20">
+          Explore Case Studies
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium rounded-lg border border-slate-800 transition">
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-900">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-2">Portfolio Deep Dives</h2>
+        <h3 class="text-3xl font-bold text-white">Featured Engineering Projects</h3>
+      </div>
+      <p class="text-sm text-slate-400 mt-2 md:mt-0">Evidence-based design documentation & simulation data</p>
+    </div>
+
+    <!-- Project 1: Brake Pedal Box (Detailed Card) -->
+    <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 mb-10 hover:border-slate-700 transition">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Text Content (7 cols) -->
+        <div class="lg:col-span-7 flex flex-col justify-between">
+          <div>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Mechanism Design</span>
+              <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-slate-800 text-slate-300">FEA Optimization</span>
+              <span class="px-2.5 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-300 border border-amber-500/20">Patent Filed</span>
+            </div>
+            <h4 class="text-2xl font-bold text-white mb-3">Adjustable Sliding Brake Pedal Box Assembly</h4>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Engineered a single-handed adjustable cockpit pedal box for a formula racecar. Designed parametric I-beam pedal arms in SolidWorks, performed static structural FEA in ANSYS under a 2,000 N panic braking load, and held pin bores to ±0.025 mm tolerances during 3-axis CNC fabrication.
+            </p>
+
+            <!-- Metrics Grid -->
+            <div class="grid grid-cols-3 gap-4 py-4 border-y border-slate-800 mb-6">
+              <div>
+                <div class="text-xs text-slate-500 uppercase font-semibold">Mass Saved</div>
+                <div class="text-lg font-bold text-emerald-400">22%</div>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500 uppercase font-semibold">Max Deflection</div>
+                <div class="text-lg font-bold text-white">1.82 mm</div>
+              </div>
+              <div>
+                <div class="text-xs text-slate-500 uppercase font-semibold">Factor of Safety</div>
+                <div class="text-lg font-bold text-white">1.46 @ 2 kN</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 text-xs text-slate-400">
+            <span class="font-medium text-slate-300">Tools:</span>
+            <span>SolidWorks · ANSYS Mechanical · MATLAB · GD&T · CNC Milling</span>
+          </div>
+        </div>
+
+        <!-- Media Placeholder / Render Container (5 cols) -->
+        <div class="lg:col-span-5 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-center min-h-[280px] p-6 text-center">
+          <div class="text-slate-500 text-sm">
+            <svg class="w-12 h-12 mx-auto mb-3 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+            <span class="block font-medium text-slate-400 mb-1">CAD Assembly & FEA Stress Plot</span>
+            <span class="text-xs text-slate-600">Replace with <code>&lt;img src="pedal-box.jpg"&gt;</code></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Additional Project Cards (Grid) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Project 2 -->
+      <article class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+        <div>
+          <div class="flex gap-2 mb-3">
+            <span class="px-2 py-0.5 text-xs font-medium rounded bg-emerald-500/10 text-emerald-400">Thermal Analysis</span>
+            <span class="px-2 py-0.5 text-xs font-medium rounded bg-slate-800 text-slate-300">ANSYS Icepak</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-2">Server PSU Forced-Air Thermal Modeling</h4>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Simulated conjugate heat transfer for a high-density DC-DC converter module. Optimized heat sink fin spacing and internal ducting to cut peak junction temperatures by 14°C.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 text-xs text-slate-500">
+          ANSYS Icepak · CFD · Thermal Management
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+        <div>
+          <div class="flex gap-2 mb-3">
+            <span class="px-2 py-0.5 text-xs font-medium rounded bg-emerald-500/10 text-emerald-400">Tooling & CAD</span>
+            <span class="px-2 py-0.5 text-xs font-medium rounded bg-slate-800 text-slate-300">SolidWorks</span>
+          </div>
+          <h4 class="text-xl font-bold text-white mb-2">Parametric CNC Fixturing & Design Tables</h4>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Constructed modular parametric CAD models and design tables in SolidWorks for CNC chuck jaws, automating production drawing updates and shop floor layout planning.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 text-xs text-slate-500">
+          SolidWorks · Design Tables · GD&T · Manufacturing
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Technical Toolkit & Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-900">
+    <div class="mb-12">
+      <h2 class="text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-2">Capabilities</h2>
+      <h3 class="text-3xl font-bold text-white">Technical Skills & Software</h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
+        <h4 class="font-semibold text-white mb-3">CAD & Mechanical Design</h4>
+        <ul class="text-sm text-slate-400 space-y-2">
+          <li>SolidWorks (Parametric, Surfacing, Large Assemblies)</li>
+          <li>AutoCAD & Revit MEP</li>
+          <li>GD&T (ASME Y14.5 Standards)</li>
+          <li>Design for Manufacturing & Assembly (DFMA)</li>
+        </ul>
+      </div>
+
+      <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
+        <h4 class="font-semibold text-white mb-3">Simulation & Analysis</h4>
+        <ul class="text-sm text-slate-400 space-y-2">
+          <li>ANSYS Mechanical (FEA / Static Structural)</li>
+          <li>ANSYS Icepak & Fluent (Conjugate Heat Transfer)</li>
+          <li>Piping Stress Analysis (AutoPIPE)</li>
+          <li>MATLAB & Simulink</li>
+        </ul>
+      </div>
+
+      <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
+        <h4 class="font-semibold text-white mb-3">Manufacturing & Testing</h4>
+        <ul class="text-sm text-slate-400 space-y-2">
+          <li>3-Axis CNC Machining & Fixture Design</li>
+          <li>Rapid Prototyping (FDM / SLA 3D Printing)</li>
+          <li>Physical Load & Deflection Validation Benchmarking</li>
+          <li>Technical Documentation & Patent Schematics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900 text-center">
+    <h3 class="text-2xl font-bold text-white mb-4">Let's Connect</h3>
+    <p class="text-slate-400 text-sm max-w-md mx-auto mb-8">
+      Open to technical discussions, research collaborations, and engineering roles.
+    </p>
+    <div class="flex justify-center gap-6 text-sm font-medium">
+      <a href="mailto:your.email@example.com" class="text-emerald-400 hover:underline">Email Me</a>
+      <a href="https://linkedin.com" target="_blank" class="text-slate-400 hover:text-white">LinkedIn</a>
+      <a href="resume.pdf" target="_blank" class="text-slate-400 hover:text-white">Download Resume</a>
+    </div>
+    <div class="text-xs text-slate-600 mt-12">
+      © Built with Tailwind CSS. Hosted on GitHub Pages.
+    </div>
+  </footer>
+
+</body>
+</html>
