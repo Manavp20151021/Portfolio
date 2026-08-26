@@ -30,48 +30,80 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <main class="max-w-6xl mx-auto px-6 py-20 flex-grow">
-    <div class="max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 rounded-full mb-6">
-        <span>MS Mechanical Engineering · CU Boulder</span>
-      </div>
-      <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
-        Mechanical Engineer specializing in HVAC Layout, MEP & FEA Analysis.
-      </h1>
-      <p class="text-lg text-slate-400 leading-relaxed mb-8">
-        Mechanical Engineer with experience in HVAC layout, MEP coordination, pipe sizing, mechanical design, and technical documentation using Revit MEP, AutoCAD, Solidworks, and related engineering tools. Skilled in ASME B31 standards, equipment scheduling, MTOs, tender preparation, and thermal-structural analysis, with hands-on experience coordinating multidisciplinary design and engineering deliverables for industrial projects.
+  <!-- Hero Section with CU Boulder Background -->
+  <section class="relative bg-cover bg-center border-b border-slate-900" style="background-image: url('cu-boulder.jpg');">
+    <!-- Dark Gradient Overlay for Contrast -->
+    <div class="absolute inset-0 bg-slate-950/85 backdrop-blur-[2px]"></div>
 
-      </p>
-      <div class="flex flex-wrap gap-4">
-        <a href="projects.html" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold rounded-lg text-sm transition shadow-lg shadow-emerald-500/20">
-          Explore Projects
-        </a>
-        <a href="experience.html" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium rounded-lg text-sm border border-slate-800 transition">
-          View Experience
-        </a>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 lg:py-28">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Intro Text -->
+        <div class="lg:col-span-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium text-emerald-400 bg-emerald-950/80 border border-emerald-800/70 rounded-full mb-6">
+            <span>MS Mechanical Engineering · CU Boulder (GPA 3.944)[cite: 1]</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
+            Mechanical Engineer specializing in HVAC Layout, MEP & Thermal-Fluids[cite: 1].
+          </h1>
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl">
+            Experienced in process piping, ASME B31 standards, Revit MEP, SolidWorks parametric modeling, and thermal-structural analysis in ANSYS[cite: 1]. Co-inventor of a patented modular vehicle pedal box assembly[cite: 1].
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="projects.html" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold rounded-lg text-sm transition shadow-lg shadow-emerald-500/20">
+              Explore Projects
+            </a>
+            <a href="experience.html" class="px-6 py-3 bg-slate-900/90 hover:bg-slate-800 text-slate-300 font-medium rounded-lg text-sm border border-slate-700 transition">
+              View Experience
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Personal Photo -->
+        <div class="lg:col-span-4 flex justify-center lg:justify-end">
+          <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-2xl p-2 bg-gradient-to-b from-slate-700 via-slate-800 to-slate-900 shadow-2xl border border-slate-700/60">
+            <img 
+              src="profile.jpg" 
+              alt="Manav Mahesh Patel" 
+              class="w-full h-full object-cover rounded-xl shadow-inner"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Fallback placeholder if profile.jpg is missing -->
+            <div class="hidden w-full h-full rounded-xl bg-slate-900 items-center justify-center text-center p-4">
+              <span class="text-xs text-slate-500">Upload <code>profile.jpg</code> to root folder</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </section>
 
-    <!-- Quick Highlights -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 pt-12 border-t border-slate-900">
+  <!-- Highlight Cards Section -->
+  <main class="max-w-6xl mx-auto px-6 py-16 flex-grow">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
       <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
         <div class="text-xs uppercase font-semibold text-emerald-400 mb-1">Featured Achievement</div>
-        <div class="text-lg font-bold text-white mb-2">Design Patent No. 471278-001</div>
-        <p class="text-xs text-slate-400 leading-relaxed">Co-invented a modular pedal box assembly for EVs; optimized structural rigidity using DFM and ANSYS FEA.</p>
+        <div class="text-lg font-bold text-white mb-2">Design Patent No. 471278-001[cite: 1]</div>
+        <p class="text-xs text-slate-400 leading-relaxed">Co-invented a patented modular pedal box assembly for EVs; applied DFM and ANSYS FEA to optimize structural rigidity[cite: 1].</p>
       </div>
 
+      <!-- Card 2 -->
       <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
         <div class="text-xs uppercase font-semibold text-emerald-400 mb-1">Current Focus</div>
-        <div class="text-lg font-bold text-white mb-2">HVAC, MEP & Thermal-Fluids</div>
-        <p class="text-xs text-slate-400 leading-relaxed">Advancing expertise in building mechanical systems, hydronic pipe sizing, ductwork layout, and Revit MEP modeling for commercial HVAC and plumbing infrastructure.</p>
+        <div class="text-lg font-bold text-white mb-2">HVAC, MEP & Thermal-Fluids[cite: 1]</div>
+        <p class="text-xs text-slate-400 leading-relaxed">Advancing expertise in building mechanical systems, hydronic pipe sizing, ductwork layout, and Revit MEP modeling[cite: 1].</p>
       </div>
 
+      <!-- Card 3 -->
       <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
-        <div class="text-xs uppercase font-semibold text-emerald-400 mb-1">Academics</div>
-        <div class="text-lg font-bold text-white mb-2">CU Boulder MS ME</div>
-        <p class="text-xs text-slate-400 leading-relaxed">Applying graduate study in Distributed Energy Resources, statistical thermodynamics, fluid dynamics, heat transfer, and thermal innovation at CU Boulder to design efficient HVAC layouts, hydronic piping, and commercial building systems.</p>
+        <div class="text-xs uppercase font-semibold text-emerald-400 mb-1">Education & Focus</div>
+        <div class="text-lg font-bold text-white mb-2">Academics</div>
+        <p class="text-xs text-slate-400 leading-relaxed">Applying graduate study in Distributed Energy Resources, statistical thermodynamics, fluid dynamics, and heat transfer at CU Boulder[cite: 1].</p>
       </div>
+
     </div>
   </main>
 
@@ -80,9 +112,9 @@
     <div class="flex justify-center gap-6 text-slate-400 mb-3">
       <a href="mailto:immanav2013@gmail.com" class="hover:text-emerald-400">immanav2013@gmail.com</a>
       <span>•</span>
-      <span>(720) 301-3071</span>
+      <span>(720) 301-3071[cite: 1]</span>
       <span>•</span>
-      <span>Boulder, CO</span>
+      <span>Boulder, CO[cite: 1]</span>
     </div>
     © Manav Mahesh Patel. Hosted on GitHub Pages.
   </footer>
