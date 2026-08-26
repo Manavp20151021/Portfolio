@@ -31,12 +31,50 @@
   </header>
 
   <!-- Hero Section with Visible CU Boulder Background & Light Overlay -->
-  <section class="relative bg-cover bg-center border-b border-slate-200" style="background-image: url('cu-boulder.jpg');">
-    <!-- Semi-transparent light gradient overlay -->
-    <div class="absolute inset-0 bg-white/85 backdrop-blur-[1.5px]"></div>
+  <!-- Hero Section with Crisp CU Boulder Background -->
+<section class="relative bg-cover bg-center border-b border-slate-200 py-12 lg:py-20" style="background-image: url('cu-boulder.jpg');">
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Frosted Glass Text Container -->
+      <div class="lg:col-span-8 bg-white/90 backdrop-blur-md p-8 sm:p-10 rounded-3xl border border-white/60 shadow-xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium text-blue-700 bg-blue-50/90 border border-blue-200 rounded-full mb-6">
+          <span>MS Mechanical Engineering · CU Boulder (GPA 3.944)</span>[cite: 1]
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-bold tracking-tight text-slate-900 leading-tight mb-5">
+          Mechanical Engineer specializing in HVAC Layout, MEP & Thermal-Fluids.[cite: 1]
+        </h1>
+        <p class="text-base sm:text-lg text-slate-700 leading-relaxed mb-8 max-w-2xl">
+          Experienced in process piping, ASME B31 standards, Revit MEP, SolidWorks parametric modeling, and thermal-structural analysis in ANSYS.[cite: 1] Co-inventor of a patented modular vehicle pedal box assembly.[cite: 1]
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="projects.html" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-md shadow-blue-500/20">
+            Explore Projects
+          </a>
+          <a href="experience.html" class="px-6 py-3 bg-white/90 hover:bg-slate-100 text-slate-800 font-medium rounded-lg text-sm border border-slate-300 transition shadow-sm">
+            View Experience
+          </a>
+        </div>
+      </div>
 
-    <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 lg:py-28">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Frosted Glass Photo Container -->
+      <div class="lg:col-span-4 flex justify-center lg:justify-end">
+        <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl p-3 bg-white/90 backdrop-blur-md shadow-xl border border-white/60">
+          <img 
+            src="profile.jpg" 
+            alt="Manav Mahesh Patel" 
+            class="w-full h-full object-cover rounded-2xl"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden w-full h-full rounded-2xl bg-slate-100 items-center justify-center text-center p-4">
+            <span class="text-xs text-slate-500 font-medium">Upload <code>profile.jpg</code> to root folder</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
         
         <!-- Intro Text -->
         <div class="lg:col-span-8">
