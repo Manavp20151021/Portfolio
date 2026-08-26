@@ -9,68 +9,67 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased font-['Inter',sans-serif] min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-900 antialiased font-['Inter',sans-serif] min-h-screen flex flex-col justify-between">
 
   <!-- Navigation Bar -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-slate-200 shadow-sm">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="text-base font-bold tracking-tight text-white flex items-center gap-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+      <a href="index.html" class="text-base font-bold tracking-tight text-slate-900 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
         <span>Manav Mahesh Patel</span>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="index.html" class="text-emerald-400 font-semibold">Home</a>
-        <a href="projects.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Projects</a>
-        <a href="experience.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Experience</a>
-        <a href="skills.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Education & Skills</a>
+        <a href="index.html" class="text-blue-600 font-semibold">Home</a>
+        <a href="projects.html" class="text-slate-600 hover:text-blue-600 transition-colors">Projects</a>
+        <a href="experience.html" class="text-slate-600 hover:text-blue-600 transition-colors">Experience</a>
+        <a href="skills.html" class="text-slate-600 hover:text-blue-600 transition-colors">Education & Skills</a>
       </nav>
-      <a href="resume.pdf" target="_blank" class="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-400 border border-emerald-500/40 rounded-lg hover:bg-emerald-500/10 transition">
+      <a href="resume.pdf" target="_blank" class="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue-600 border border-blue-600/30 rounded-lg hover:bg-blue-50 transition">
         Resume (PDF)
       </a>
     </div>
   </header>
 
-  <!-- Hero Section with CU Boulder Background -->
-  <section class="relative bg-cover bg-center border-b border-slate-900" style="background-image: url('cu-boulder.jpg');">
-    <!-- Dark Gradient Overlay for Contrast -->
-    <div class="absolute inset-0 bg-slate-950/85 backdrop-blur-[2px]"></div>
+  <!-- Hero Section with Visible CU Boulder Background & Light Overlay -->
+  <section class="relative bg-cover bg-center border-b border-slate-200" style="background-image: url('cu-boulder.jpg');">
+    <!-- Semi-transparent light gradient overlay -->
+    <div class="absolute inset-0 bg-white/85 backdrop-blur-[1.5px]"></div>
 
     <div class="relative z-10 max-w-6xl mx-auto px-6 py-20 lg:py-28">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left Column: Intro Text -->
+        <!-- Intro Text -->
         <div class="lg:col-span-8">
-          <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium text-emerald-400 bg-emerald-950/80 border border-emerald-800/70 rounded-full mb-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium text-blue-700 bg-blue-50 border border-blue-200 rounded-full mb-6">
             <span>MS Mechanical Engineering · CU Boulder (GPA 3.944)[cite: 1]</span>
           </div>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-tight mb-6">
             Mechanical Engineer specializing in HVAC Layout, MEP & Thermal-Fluids[cite: 1].
           </h1>
-          <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl">
+          <p class="text-base sm:text-lg text-slate-700 leading-relaxed mb-8 max-w-2xl">
             Experienced in process piping, ASME B31 standards, Revit MEP, SolidWorks parametric modeling, and thermal-structural analysis in ANSYS[cite: 1]. Co-inventor of a patented modular vehicle pedal box assembly[cite: 1].
           </p>
           <div class="flex flex-wrap gap-4">
-            <a href="projects.html" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold rounded-lg text-sm transition shadow-lg shadow-emerald-500/20">
+            <a href="projects.html" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-sm transition shadow-md shadow-blue-500/20">
               Explore Projects
             </a>
-            <a href="experience.html" class="px-6 py-3 bg-slate-900/90 hover:bg-slate-800 text-slate-300 font-medium rounded-lg text-sm border border-slate-700 transition">
+            <a href="experience.html" class="px-6 py-3 bg-white hover:bg-slate-100 text-slate-800 font-medium rounded-lg text-sm border border-slate-300 transition shadow-sm">
               View Experience
             </a>
           </div>
         </div>
 
-        <!-- Right Column: Personal Photo -->
+        <!-- Personal Photo Card -->
         <div class="lg:col-span-4 flex justify-center lg:justify-end">
-          <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-2xl p-2 bg-gradient-to-b from-slate-700 via-slate-800 to-slate-900 shadow-2xl border border-slate-700/60">
+          <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-2xl p-2 bg-white shadow-xl border border-slate-200">
             <img 
               src="profile.jpg" 
               alt="Manav Mahesh Patel" 
-              class="w-full h-full object-cover rounded-xl shadow-inner"
+              class="w-full h-full object-cover rounded-xl"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
-            <!-- Fallback placeholder if profile.jpg is missing -->
-            <div class="hidden w-full h-full rounded-xl bg-slate-900 items-center justify-center text-center p-4">
-              <span class="text-xs text-slate-500">Upload <code>profile.jpg</code> to root folder</span>
+            <div class="hidden w-full h-full rounded-xl bg-slate-100 items-center justify-center text-center p-4">
+              <span class="text-xs text-slate-500 font-medium">Upload <code>profile.jpg</code> to root folder</span>
             </div>
           </div>
         </div>
@@ -84,33 +83,33 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
       <!-- Card 1 -->
-      <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
-        <div class="text-xs uppercase font-semibold text-emerald-400 mb-1">Featured Achievement</div>
-        <div class="text-lg font-bold text-white mb-2">Design Patent No. 471278-001[cite: 1]</div>
-        <p class="text-xs text-slate-400 leading-relaxed">Co-invented a patented modular pedal box assembly for EVs; applied DFM and ANSYS FEA to optimize structural rigidity[cite: 1].</p>
+      <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="text-xs uppercase font-semibold text-blue-600 mb-1">Featured Achievement</div>
+        <div class="text-lg font-bold text-slate-900 mb-2">Design Patent No. 471278-001[cite: 1]</div>
+        <p class="text-xs text-slate-600 leading-relaxed">Co-invented a patented modular pedal box assembly for EVs; applied DFM and ANSYS FEA to optimize structural rigidity[cite: 1].</p>
       </div>
 
       <!-- Card 2 -->
-      <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
-        <div class="text-xs uppercase font-semibold text-emerald-400 mb-1">Current Focus</div>
-        <div class="text-lg font-bold text-white mb-2">HVAC, MEP & Thermal-Fluids[cite: 1]</div>
-        <p class="text-xs text-slate-400 leading-relaxed">Advancing expertise in building mechanical systems, hydronic pipe sizing, ductwork layout, and Revit MEP modeling[cite: 1].</p>
+      <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="text-xs uppercase font-semibold text-blue-600 mb-1">Current Focus</div>
+        <div class="text-lg font-bold text-slate-900 mb-2">HVAC, MEP & Thermal-Fluids[cite: 1]</div>
+        <p class="text-xs text-slate-600 leading-relaxed">Advancing expertise in building mechanical systems, hydronic pipe sizing, ductwork layout, and Revit MEP modeling[cite: 1].</p>
       </div>
 
       <!-- Card 3 -->
-      <div class="p-6 bg-slate-900/40 border border-slate-800 rounded-xl">
-        <div class="text-xs uppercase font-semibold text-emerald-400 mb-1">Education & Focus</div>
-        <div class="text-lg font-bold text-white mb-2">Academics</div>
-        <p class="text-xs text-slate-400 leading-relaxed">Applying graduate study in Distributed Energy Resources, statistical thermodynamics, fluid dynamics, and heat transfer at CU Boulder[cite: 1].</p>
+      <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="text-xs uppercase font-semibold text-blue-600 mb-1">Education & Focus</div>
+        <div class="text-lg font-bold text-slate-900 mb-2">Academics</div>
+        <p class="text-xs text-slate-600 leading-relaxed">Applying graduate study in Distributed Energy Resources, statistical thermodynamics, fluid dynamics, and heat transfer at CU Boulder[cite: 1].</p>
       </div>
 
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-900 py-10 text-center text-xs text-slate-600">
-    <div class="flex justify-center gap-6 text-slate-400 mb-3">
-      <a href="mailto:immanav2013@gmail.com" class="hover:text-emerald-400">immanav2013@gmail.com</a>
+  <footer class="border-t border-slate-200 py-10 text-center text-xs text-slate-500 bg-white">
+    <div class="flex justify-center gap-6 text-slate-600 mb-3">
+      <a href="mailto:immanav2013@gmail.com" class="hover:text-blue-600 font-medium">immanav2013@gmail.com[cite: 1]</a>
       <span>•</span>
       <span>(720) 301-3071[cite: 1]</span>
       <span>•</span>
