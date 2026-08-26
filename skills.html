@@ -7,22 +7,22 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased font-['Inter',sans-serif] min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-900 antialiased font-['Inter',sans-serif] min-h-screen flex flex-col justify-between">
 
   <!-- Navigation Bar -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-slate-200 shadow-sm">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="text-base font-bold tracking-tight text-white flex items-center gap-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+      <a href="index.html" class="text-base font-bold tracking-tight text-slate-900 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
         <span>Manav Mahesh Patel</span>
       </a>
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="index.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Home</a>
-        <a href="projects.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Projects</a>
-        <a href="experience.html" class="text-slate-400 hover:text-emerald-400 transition-colors">Experience</a>
-        <a href="skills.html" class="text-emerald-400 font-semibold">Education & Skills</a>
+        <a href="index.html" class="text-slate-600 hover:text-blue-600 transition-colors">Home</a>
+        <a href="projects.html" class="text-slate-600 hover:text-blue-600 transition-colors">Projects</a>
+        <a href="experience.html" class="text-slate-600 hover:text-blue-600 transition-colors">Experience</a>
+        <a href="skills.html" class="text-blue-600 font-semibold">Education & Skills</a>
       </nav>
-      <a href="resume.pdf" target="_blank" class="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-400 border border-emerald-500/40 rounded-lg hover:bg-emerald-500/10 transition">
+      <a href="resume.pdf" target="_blank" class="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-blue-600 border border-blue-600/30 rounded-lg hover:bg-blue-50 transition">
         Resume (PDF)
       </a>
     </div>
@@ -31,134 +31,155 @@
   <main class="max-w-6xl mx-auto px-6 py-16 flex-grow">
     
     <!-- Education Section -->
-    <!-- Education Section -->
-<div class="mb-16">
-  <div class="text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-1">Academic Background</div>
-  <h1 class="text-3xl font-bold text-white mb-8">Education</h1>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <!-- CU Boulder -->
-    <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl">
-      <div class="flex justify-between items-start gap-4 mb-2">
-        <h2 class="text-lg font-bold text-white">University of Colorado Boulder</h2>
-        <span class="text-xs font-mono text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded border border-emerald-800/60 whitespace-nowrap shrink-0">GPA: 3.944 / 4.0</span>
+    <div class="mb-14">
+      <div class="text-xs uppercase tracking-widest text-blue-600 font-semibold mb-1">Academic Background</div>
+      <h1 class="text-3xl font-bold text-slate-900 mb-8">Education</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- CU Boulder -->
+        <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <div class="flex justify-between items-start gap-4 mb-2">
+            <h2 class="text-lg font-bold text-slate-900">University of Colorado Boulder[cite: 1]</h2>
+            <span class="text-xs font-mono font-medium text-blue-700 bg-blue-50 px-2.5 py-1 rounded border border-blue-200 whitespace-nowrap shrink-0">GPA: 3.944 / 4.0[cite: 1]</span>
+          </div>
+          <div class="text-sm text-slate-700 font-medium mb-1">Master of Science in Mechanical Engineering[cite: 1]</div>
+          <div class="text-xs text-slate-500 font-mono mb-4">Boulder, CO | August 2025 – Present[cite: 1]</div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <span class="font-semibold text-slate-800">Relevant Courses:</span> Fluid Dynamics, Heat Transfer, Thermal System Innovation, Advanced Product Design, Distributed Energy Resources, Statistical Thermodynamics[cite: 1].
+          </p>
+        </div>
+
+        <!-- DJ Sanghvi -->
+        <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <div class="flex justify-between items-start gap-4 mb-2">
+            <h2 class="text-lg font-bold text-slate-900">Dwarkadas J. Sanghvi College of Engineering[cite: 1]</h2>
+            <span class="text-xs font-mono font-medium text-blue-700 bg-blue-50 px-2.5 py-1 rounded border border-blue-200 whitespace-nowrap shrink-0">GPA: 3.4 / 4.0[cite: 1]</span>
+          </div>
+          <div class="text-sm text-slate-700 font-medium mb-1">Bachelor of Technology in Mechanical Engineering[cite: 1]</div>
+          <div class="text-xs text-slate-500 font-mono mb-4">Mumbai, India | July 2020 – May 2024[cite: 1]</div>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            <span class="font-semibold text-slate-800">Relevant Courses:</span> Refrigeration and Air Conditioning, FEA, CFD, Machine Design, Thermodynamics, Fluid Mechanics[cite: 1].
+          </p>
+        </div>
       </div>
-      <div class="text-sm text-slate-300 font-medium mb-1">Master of Science in Mechanical Engineering</div>
-      <div class="text-xs text-slate-500 font-mono mb-4">Boulder, CO | August 2025 – Present</div>
-      <p class="text-xs text-slate-400 leading-relaxed">
-        <span class="font-semibold text-slate-300">Relevant Courses:</span> Fluid Dynamics, Heat Transfer, Thermal System Innovation, Advanced Product Design, Distributed Energy Resources, Statistical Thermodynamics.
-      </p>
     </div>
 
-    <!-- DJ Sanghvi -->
-    <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl">
-      <div class="flex justify-between items-start gap-4 mb-2">
-        <h2 class="text-lg font-bold text-white">Dwarkadas J. Sanghvi College of Engineering</h2>
-        <span class="text-xs font-mono text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded border border-emerald-800/60 whitespace-nowrap shrink-0">GPA: 3.4 / 4.0</span>
-      </div>
-      <div class="text-sm text-slate-300 font-medium mb-1">Bachelor of Technology in Mechanical Engineering</div>
-      <div class="text-xs text-slate-500 font-mono mb-4">Mumbai, India | July 2020 – May 2024</div>
-      <p class="text-xs text-slate-400 leading-relaxed">
-        <span class="font-semibold text-slate-300">Relevant Courses:</span> Refrigeration and Air Conditioning, FEA, CFD, Machine Design, Thermodynamics, Fluid Mechanics.
-      </p>
-    </div>
-  </div>
-</div>
-    
     <!-- Technical Skills Breakdown -->
-    <div class="mb-16">
-      <div class="text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-1">Capabilities</div>
-      <h2 class="text-3xl font-bold text-white mb-8">Technical Skills & Standards</h2>
+    <div class="mb-14">
+      <div class="text-xs uppercase tracking-widest text-blue-600 font-semibold mb-1">Capabilities</div>
+      <h2 class="text-3xl font-bold text-slate-900 mb-8">Technical Skills & Standards</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-5 bg-slate-900/40 border border-slate-800 rounded-xl">
-          <h3 class="font-bold text-white text-sm mb-3 text-emerald-400">HVAC & Piping Design</h3>
-          <ul class="text-xs text-slate-400 space-y-1.5">
-            <li>Revit MEP & AutoPipe</li>
-            <li>HVAC Layout & Ductwork Design</li>
-            <li>Pipe Sizing & Chilled Water Systems</li>
-            <li>Piping Isometrics & MTOs</li>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h3 class="font-bold text-blue-600 text-sm mb-3">HVAC & Piping Design</h3>
+          <ul class="text-xs text-slate-600 space-y-1.5">
+            <li>Revit MEP & AutoPipe[cite: 1]</li>
+            <li>HVAC Layout & Ductwork Design[cite: 1]</li>
+            <li>Pipe Sizing & Chilled Water Systems[cite: 1]</li>
+            <li>Piping Isometrics & MTOs[cite: 1]</li>
           </ul>
         </div>
 
-        <div class="p-5 bg-slate-900/40 border border-slate-800 rounded-xl">
-          <h3 class="font-bold text-white text-sm mb-3 text-emerald-400">CAD / BIM Software</h3>
-          <ul class="text-xs text-slate-400 space-y-1.5">
-            <li>AutoCAD & SolidWorks</li>
-            <li>Revit (MEP / Systems)</li>
-            <li>Inventor CAD</li>
-            <li>Parametric Design Tables</li>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h3 class="font-bold text-blue-600 text-sm mb-3">CAD / BIM Software</h3>
+          <ul class="text-xs text-slate-600 space-y-1.5">
+            <li>AutoCAD & SolidWorks[cite: 1]</li>
+            <li>Revit (MEP / Systems)[cite: 1]</li>
+            <li>Inventor CAD[cite: 1]</li>
+            <li>Parametric Design Tables[cite: 1]</li>
           </ul>
         </div>
 
-        <div class="p-5 bg-slate-900/40 border border-slate-800 rounded-xl">
-          <h3 class="font-bold text-white text-sm mb-3 text-emerald-400">Simulation Tools</h3>
-          <ul class="text-xs text-slate-400 space-y-1.5">
-            <li>ANSYS Mechanical (FEA, Thermal)</li>
-            <li>ANSYS Fluent (CFD)</li>
-            <li>MATLAB & Simulink</li>
-            <li>Advanced Microsoft Excel</li>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h3 class="font-bold text-blue-600 text-sm mb-3">Simulation Tools</h3>
+          <ul class="text-xs text-slate-600 space-y-1.5">
+            <li>ANSYS Mechanical (FEA, Thermal)[cite: 1]</li>
+            <li>ANSYS Fluent (CFD)[cite: 1]</li>
+            <li>MATLAB & Simulink[cite: 1]</li>
+            <li>Advanced Microsoft Excel[cite: 1]</li>
           </ul>
         </div>
 
-        <div class="p-5 bg-slate-900/40 border border-slate-800 rounded-xl">
-          <h3 class="font-bold text-white text-sm mb-3 text-emerald-400">Industry Standards</h3>
-          <ul class="text-xs text-slate-400 space-y-1.5">
-            <li>ASME B31.1 & B31.3 Standards</li>
-            <li>ASHRAE Load Calculations</li>
-            <li>Piping Stress Analysis</li>
-            <li>Pressure Vessel Fundamentals</li>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h3 class="font-bold text-blue-600 text-sm mb-3">Industry Standards</h3>
+          <ul class="text-xs text-slate-600 space-y-1.5">
+            <li>ASME B31.1 & B31.3 Standards[cite: 1]</li>
+            <li>ASHRAE Load Calculations[cite: 1]</li>
+            <li>Piping Stress Analysis[cite: 1]</li>
+            <li>Pressure Vessel Fundamentals[cite: 1]</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Certifications -->
-   <!-- Professional Certifications Section for skills.html -->
-<div class="p-6 bg-slate-900/60 border border-slate-800 rounded-xl">
-  <div class="text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-1">Industry Validation</div>
-  <h2 class="text-xl font-bold text-white mb-6">Professional Certifications</h2>
+    <!-- Professional Certifications -->
+    <div class="p-8 bg-white border border-slate-200 rounded-2xl shadow-sm">
+      <div class="text-xs uppercase tracking-widest text-blue-600 font-semibold mb-1">Credentials & Training</div>
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Professional Certifications & Licenses</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <!-- MEP, HVAC & Plumbing Design -->
-    <div class="p-5 bg-slate-950/60 border border-slate-800/80 rounded-lg">
-      <div class="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">HVAC & Plumbing (BIM / MEP)</div>
-      <ul class="text-xs text-slate-300 space-y-2.5">
-        <li class="flex items-start gap-2">
-          <span class="text-emerald-400 font-bold">•</span>
-          <span><strong>Sustainable HVAC Systems with Revit:</strong> Building thermal efficiency, load calculations, and equipment integration.</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-emerald-400 font-bold">•</span>
-          <span><strong>Revit MEP Essential Training:</strong> Hydronic pipe routing, ductwork systems, and multi-trade BIM clash detection.</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-emerald-400 font-bold">•</span>
-          <span><strong>Fire Protection & Sprinkler System Design:</strong> Layout distribution, head placement, and hydraulic flow coordination.</span>
-        </li>
-      </ul>
-    </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- 1. BIM & MEP Design -->
+        <div class="p-5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-700 mb-3">Revit & BIM Systems</div>
+            <ul class="text-xs text-slate-700 space-y-2.5">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Revit MEP Essential Training:</strong> Hydronic duct/pipe sizing, mechanical equipment scheduling, and MEP clash coordination[cite: 1].</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Sustainable HVAC Systems with Revit:</strong> Building energy analysis, thermal load modeling, and low-energy ventilation workflows[cite: 1].</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Sprinkler & Fire Protection Design:</strong> NFPA-aligned head layouts, hydraulic pipe networks, and system zoning[cite: 1].</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-    <!-- Standards, Piping & Engineering Reliability -->
-    <div class="p-5 bg-slate-950/60 border border-slate-800/80 rounded-lg">
-      <div class="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">Piping Standards & Code Compliance</div>
-      <ul class="text-xs text-slate-300 space-y-2.5">
-        <li class="flex items-start gap-2">
-          <span class="text-emerald-400 font-bold">•</span>
-          <span><strong>ASME B31 Piping Engineering Masterclass:</strong> Process and power piping stress analysis, pressure ratings, and code safety compliance.</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-emerald-400 font-bold">•</span>
-          <span><strong>HVAC & Plumbing Drawing Reading:</strong> Decoding P&IDs, isometric drawings, architectural floor plans, and material take-offs (MTOs).</span>
-        </li>
-      </ul>
+        <!-- 2. Piping & Code Compliance -->
+        <div class="p-5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-700 mb-3">Piping & Mechanical Standards</div>
+            <ul class="text-xs text-slate-700 space-y-2.5">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>ASME B31 Piping Engineering Masterclass:</strong> Process piping (B31.3) and power piping (B31.1) stress flexibility and design criteria[cite: 1].</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>HVAC & Plumbing Drawing Reading:</strong> Interpreting P&IDs, isometric spool drawings, equipment schedules, and MTOs[cite: 1].</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3. AI & Computational Analysis -->
+        <div class="p-5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-700 mb-3">Computational & Technical Skills</div>
+            <ul class="text-xs text-slate-700 space-y-2.5">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Microsoft Certified: Azure AI Fundamentals:</strong> Cloud infrastructure, automated data pipelines, and machine learning fundamentals.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Mechanical Analysis & Simulation Specialization:</strong> Finite element formulations, boundary condition definitions, and numerical convergence.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</div>
 
   </main>
 
-  <footer class="border-t border-slate-900 py-10 text-center text-xs text-slate-600">
+  <footer class="border-t border-slate-200 py-10 text-center text-xs text-slate-500 bg-white">
     © Manav Mahesh Patel. Hosted on GitHub Pages.
   </footer>
 
